@@ -1,0 +1,70 @@
+services:
+  postgres:
+    image: postgis/postgis:14-3.5-alpine
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
+    volumes:
+      - ./postgres/initdb.sh:/docker-entrypoint-initdb.d/initdb.sh
+    networks:
+      - oliBootstrap-network
+
+  redis:
+    image: redis:alpine
+    ports:
+      - 6379:6379
+    volumes:
+      - redis-data:/data
+    command: redis-server --appendonly yes
+    networks:
+      - oliBootstrap-network
+
+  server:
+    profiles:
+      - all
+    image: oliBootstrap/server
+    build:
+      dockerfile: Dockerfile.server
+    ports:
+      - 3001:3001
+    env_file:
+      - path: ./apps/server/.env
+        required: false
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@postgres:5432/oliBootstrap
+      - REDIS_URL=redis://redis:6379
+      - PROCESS_TYPE=web
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - oliBootstrap-network
+
+  worker:
+    profiles:
+      - all
+    image: oliBootstrap/server
+    build:
+      dockerfile: Dockerfile.server
+    env_file:
+      - path: ./apps/server/.env
+        required: false
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@postgres:5432/oliBootstrap
+      - REDIS_URL=redis://redis:6379
+      - PROCESS_TYPE=worker
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - oliBootstrap-network
+
+networks:
+  oliBootstrap-network:
+    driver: bridge
+
+volumes:
+  redis-data:

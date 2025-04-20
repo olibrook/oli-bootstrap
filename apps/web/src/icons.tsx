@@ -1,0 +1,51 @@
+// Select from here https://react-icons.github.io/react-icons/
+
+export { FaGithub as GithubIcon } from 'react-icons/fa';
+export { RxDashboard as DashboardIcon } from 'react-icons/rx';
+
+export { FaUsers as UsersIcon } from 'react-icons/fa';
+export { GiPokerHand as SessionsIcon } from 'react-icons/gi';
+export { IoCloudUploadOutline as UploadsIcon } from 'react-icons/io5';
+export { TbChess as PlayersIcon } from 'react-icons/tb';
+export { FaSearch as SearchIcon } from 'react-icons/fa';
+export { RxSlash as SlashIcon } from 'react-icons/rx';
+export { RxDividerHorizontal as HDividerIcon } from 'react-icons/rx';
+export { CiCalendarDate as DateIcon } from 'react-icons/ci';
+export { AiOutlineLoading as LoadingIcon } from 'react-icons/ai';
+export { FaMoon as MoonIcon } from 'react-icons/fa';
+export { IoSunny as SunIcon } from 'react-icons/io5';
+export { IoChevronDown as ChevronDownIcon } from 'react-icons/io5';
+export { MdClose as CloseIcon } from 'react-icons/md';
+export { FcGoogle as GoogleIcon } from 'react-icons/fc';
+export { FaSort as SortIcon } from 'react-icons/fa6';
+export { FaSortDown as SortDownIcon } from 'react-icons/fa6';
+export { FaSortUp as SortUpIcon } from 'react-icons/fa6';
+export { FaFilter as FilterIcon } from 'react-icons/fa';
+export { FaDownload as DownloadIcon } from 'react-icons/fa';
+export { GiPieChart as PieChartIcon } from 'react-icons/gi';
+export { FaArrowTrendUp as TrendUpIcon } from 'react-icons/fa6';
+export { FaChevronRight as ChevronRightIcon, FaMoneyBillAlt as MoneyIcon } from 'react-icons/fa';
+export { FaRegEnvelope as EnvelopeIcon } from 'react-icons/fa';
+export { FaInfoCircle as InfoIcon } from 'react-icons/fa';
+export { FaFile as FileIcon } from 'react-icons/fa6';
+export { FaRegCheckCircle as SuccessIcon } from 'react-icons/fa';
+export { MdErrorOutline as ErrorIcon } from 'react-icons/md';
+export { GiSandsOfTime as WaitingIcon } from 'react-icons/gi';
+export { TfiMicrosoftAlt as MicrosoftIcon } from 'react-icons/tfi';
+export { PiSignOutBold as SignOutIcon } from 'react-icons/pi';
+export { GiHamburgerMenu as HamburgerIcon } from 'react-icons/gi';
+export { GrCatalog as CatalogIcon } from 'react-icons/gr';
+export { FaRegBell as BellIcon } from 'react-icons/fa';
+export { TbLayoutSidebarRightExpand as ExpandLeftIcon } from 'react-icons/tb';
+export { TbLayoutSidebarLeftExpand as ExpandRightIcon } from 'react-icons/tb';
+export { FaRegUser as UserIcon } from 'react-icons/fa';
+export { IoSettingsOutline as SettingsIcon } from 'react-icons/io5';
+export { FaSalesforce as SalesforceIcon } from 'react-icons/fa6';
+export { CiServer as ServerIcon } from 'react-icons/ci';
+export { FiExternalLink as ExternalLinkIcon } from 'react-icons/fi';
+export { LuClipboard as ClipboardIcon } from 'react-icons/lu';
+export { PiPlugsLight as ConnectIcon } from 'react-icons/pi';
+
+export { LiaLanguageSolid as TranslationsIcon } from 'react-icons/lia';
+export { CiShoppingTag as ProductsIcon } from 'react-icons/ci';
+export { IoSparklesOutline as SkillsIcon } from 'react-icons/io5';

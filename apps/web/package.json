@@ -1,0 +1,49 @@
+{
+  "name": "@oliBootstrap/web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "react-hook-form": "^7.55.0",
+    "react-markdown": "^10.1.0",
+    "recharts": "^2.15.2"
+  },
+  "devDependencies": {
+    "@oliBootstrap/server": "workspace:*",
+    "@oliBootstrap/tailwind-config": "workspace:*",
+    "@oliBootstrap/typescript-config": "workspace:*",
+    "@tailwindcss/vite": "^4.0.14",
+    "@tanstack/react-query": "^5.20.5",
+    "@tanstack/react-router": "^1.16.2",
+    "@tanstack/router-vite-plugin": "^1.16.3",
+    "@trpc/client": "11.0.0-rc.833",
+    "@trpc/react-query": "11.0.0-rc.833",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "^10.4.17",
+    "daisyui": "^5.0.6",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "framer-motion": "^12.5.0",
+    "postcss": "^8.4.35",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
+    "superjson": "^2.2.1",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss": "^4.0.14",
+    "typescript": "^5.2.2",
+    "vite": "^6.2.2",
+    "vite-tsconfig-paths": "^4.3.2",
+    "zod": "^3.0.0"
+  }
+}
